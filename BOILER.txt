@@ -1,0 +1,10 @@
+import os.path
+
+file_name = "../JudgingInputs/Prob01.in.txt"
+
+while not os.path.exists(file_name):
+    file_name = raw_input("File does not exist. Please enter a valid file name.  ")
+
+infile = open(file_name, 'r')
+text = infile.read()
+infile.close()
